@@ -1,0 +1,138 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;color:#17130f;background:#f5ecda;line-height:1.6}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%;object-fit:cover}
+.site-header{height:78px;display:flex;align-items:center;justify-content:space-between;padding:0 5%;background:#17130f;color:#fff;position:relative;z-index:20}
+.logo{font-weight:800;letter-spacing:.08em;font-size:1rem}
+.logo span{color:#19a828}
+
+.nav{display:flex;gap:2rem;font-weight:700;font-size:.9rem}
+.nav a{opacity:.75;transition:.2s}
+.nav a:hover,.nav a.active{opacity:1;color:#19a828}
+
+.menu-toggle{display:none;background:none;border:0;color:#fff;font-size:1.6rem}
+
+.hero{min-height:78vh;background:url('da smoke n spice.jpg') center/cover;position:relative;display:flex;align-items:center}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.3),rgba(0,0,0,.05))}
+.hero-content{position:relative;color:#fff;max-width:850px;padding:8vw 6%}
+
+.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-weight:700;font-size:.76rem;color:#c78e20;margin-bottom:1rem}
+.hero h1,.page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(3rem,7vw,6.5rem);line-height:1.02;letter-spacing:-.03em
+}.hero h1 em{color:#e4b338;font-style:normal}
+.hero-copy{max-width:620px;font-size:1.1rem;margin:1.5rem 0 2rem}
+
+.buttons{display:flex;gap:1rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.9rem 1.5rem;border:2px solid transparent;font-weight:800;transition:.2s;cursor:pointer}
+.btn-primary{background:#d49b26;color:#17130f}
+.btn-light{background:#fff;color:#17130f}
+.btn-dark{background:#17130f;color:#fff}
+.btn:hover{transform:translateY(-2px)}
+
+.section{padding:6rem 6%}
+
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:end}
+.intro h2,.section-heading h2,.copy h2,.contact-info h2{font-family:'Playfair Display',serif;font-size:clamp(2.3rem,4vw,4.3rem);line-height:1.05}
+.intro>p{font-size:1.15rem;color:#5c5146}
+
+.feature-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1rem;padding:0 1rem}
+.feature-card{position:relative;min-height:500px;overflow:hidden;background:#17130f;color:#fff}
+.feature-card-large{min-height:600px}
+.feature-card img{height:100%;position:absolute;inset:0;transition:.5s}
+.feature-card:hover img{transform:scale(1.05)}
+.feature-card:after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(0,0,0,.9))}
+.feature-card div{position:absolute;z-index:2;bottom:2rem;left:2rem;right:2rem}
+.feature-card span{color:#e1ad32}
+.feature-card h3{font-family:'Playfair Display',serif;font-size:2rem}
+
+.social{background:#eee6d6}
+.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:1rem}
+.text-link{font-weight:800;border-bottom:2px solid #d49b26;padding-bottom:.25rem}
+.muted{color:#75695e;margin-bottom:2rem}
+
+.social-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.social-grid img{aspect-ratio:1;object-fit:cover}
+
+.cta-band{background:#c78e20;color:#17130f;padding:4rem 6%;display:flex;justify-content:space-between;align-items:center;gap:2rem}
+.cta-band h2{font-family:'Playfair Display',serif;font-size:3rem}
+
+.page-hero{height:48vh;display:flex;align-items:end;padding:5% 6%;color:#fff;background-position:center;background-size:cover;position:relative}
+.page-hero:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.72),transparent)}
+.page-hero>div{position:relative;z-index:1}
+.about-hero{background-image:url('da smoke n spice.jpg')}
+.menu-hero{background-image:url('da smoke n spice.jpg')}
+.contact-hero{background-image:url('da smoke n spice.jpg')}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.split img{min-height:600px}
+
+.copy p:not(.eyebrow){margin-top:1.3rem;color:#5c5146}
+
+.mission{background:#17130f;color:#fff;padding:7rem 6%}
+.mission-inner{max-width:900px}
+.mission h2{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,5rem);line-height:1.05}
+.mission p:last-child{margin-top:1.5rem;color:#d9d0c3;font-size:1.1rem}
+
+.menu-section{padding-top:4rem}
+.menu-category{display:grid;grid-template-columns:1fr 1fr;min-height:650px;margin-bottom:4rem;background:#eee6d6}
+.menu-category.reverse .category-image{order:2}
+.category-image img{height:100%;min-height:650px}
+
+.menu-content{padding:4rem}
+.menu-content h2{font-family:'Playfair Display',serif;font-size:3.5rem;margin-bottom:2rem}
+
+.menu-item{display:flex;justify-content:space-between;gap:2rem;padding:1.4rem 0;border-top:1px solid #c9bcaa}
+.menu-item h3{font-size:1.2rem}
+.menu-item p{color:#75695e;font-size:.95rem}
+
+.menu-note{margin:0 6% 5rem;padding:1rem 1.5rem;background:#fff0c9;border-left:4px solid #c78e20}
+
+.contact-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:6rem}
+.contact-info h2{margin-bottom:1.5rem}
+.contact-info>p:not(.eyebrow){color:#655a4f;margin-bottom:3rem}
+.contact-detail{border-top:1px solid #c9bcaa;padding:1.25rem 0}
+.contact-detail span{display:block;font-size:.7rem;letter-spacing:.15em;font-weight:800;color:#c78e20;margin-bottom:.3rem}
+.contact-detail a{font-weight:700}
+
+.inquiry-form{background:#eee6d6;padding:2rem}
+.inquiry-form label{display:block;font-weight:700;margin-bottom:1.2rem}
+.inquiry-form input,.inquiry-form textarea{width:100%;display:block;margin-top:.45rem;padding:.85rem;border:1px solid #c9bcaa;background:#fff;font:inherit}
+.form-status{margin-top:1rem;color:#775b13;font-weight:700}
+
+.footer{background:#17130f;color:#d9d0c3;padding:4rem 6% 2rem;display:grid;grid-template-columns:2fr 2fr 1fr;gap:2rem}
+.footer p{margin-top:.6rem;color:#93887b}
+.footer-links,.social-links{display:flex;flex-direction:column;gap:.5rem}
+.footer a:hover{color:#e1ad32}
+.footer small{grid-column:1/-1;border-top:1px solid #3d362e;padding-top:1.5rem;color:#75695e}@media(max-width:800px){.site-header{height:68px}
+
+.menu-toggle{display:block}
+
+.nav{display:none;position:absolute;top:68px;left:0;right:0;background:#17130f;padding:1rem 6%;flex-direction:column;gap:1rem}
+.nav.open{display:flex}
+
+.hero{min-height:82vh}
+.intro,.split,.contact-layout{grid-template-columns:1fr;gap:2rem}
+.feature-grid{grid-template-columns:1fr;padding:0 .75rem}
+.feature-card,.feature-card-large{min-height:430px}
+
+.social-grid{grid-template-columns:1fr 1fr}
+
+.cta-band{flex-direction:column;align-items:flex-start}
+
+.page-hero{height:42vh}
+
+.menu-category{grid-template-columns:1fr}
+.menu-category.reverse .category-image{order:0}
+
+.category-image img{min-height:350px}
+
+.menu-content{padding:2.5rem 1.5rem}
+.menu-content h2{font-size:2.7rem}
+
+.footer{grid-template-columns:1fr 1fr}
+.footer small{grid-column:1/-1}}@media(max-width:500px){.hero-content{padding:7vw 5%}
+.hero h1{font-size:3.2rem}
+
+.section{padding:4rem 5%}.social-grid{grid-template-columns:1fr}
+.footer{grid-template-columns:1fr}
+.footer small{grid-column:auto}}

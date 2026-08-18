@@ -136,3 +136,9 @@ img{display:block;width:100%;object-fit:cover}
 .section{padding:4rem 5%}.social-grid{grid-template-columns:1fr}
 .footer{grid-template-columns:1fr}
 .footer small{grid-column:auto}}
+
+/* FAQ section (AEO) */
+.faq-list{display:grid;gap:1.5rem;margin-top:2rem}
+.faq-item{border-top:1px solid #e4ddd2;padding-top:1.25rem}
+.faq-item h3{font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:.5rem}
+.faq-item p{color:#5c5347;max-width:720px}
